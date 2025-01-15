@@ -18,6 +18,7 @@ YouTube Video I referenced for help: https://www.youtube.com/watch?v=V6tS5iPIX08
 
   ## dirsearch
   - Among these open ports is port 80. So the first thing to find any directories associted with the web server I used dirsearch.
+    
     ![image](https://github.com/user-attachments/assets/4a12f6e2-da96-4771-b3ce-a6f34279a133)
     - I found that the above directories through the dirsearch. After searching through some, I found the /messages.html to be especially interesting.
   ## web enumeration
@@ -53,8 +54,10 @@ YouTube Video I referenced for help: https://www.youtube.com/watch?v=V6tS5iPIX08
     ![image](https://github.com/user-attachments/assets/e9ac3a4c-c3a4-4dc0-ac05-59891b2e433b)
 # User Flag
   - Now that we are in I can list files and directories. I can also move to the /home direcrory to find hosts (comte being imporant here).
+    
     ![image](https://github.com/user-attachments/assets/02f2e66f-d81f-4099-8cd7-3f0cf38a58b3)
   - We can move into comte and view the files listed. The user.txt file is listed however we get permission denied when trying to read it.
+
     ![image](https://github.com/user-attachments/assets/df1079cf-e01f-4fc9-ab7d-471ffb625430)
     
   ### SSH Access
@@ -76,6 +79,7 @@ YouTube Video I referenced for help: https://www.youtube.com/watch?v=V6tS5iPIX08
 - Moving into the /etc/systemd directory allows us to view the details of the exploit.timer and exploit.service.
   ![image](https://github.com/user-attachments/assets/ad5e5f8d-bf04-4bc4-ace8-ec81c4602e64)
 - As seen there isn't a time specified yet in the exploit timer, so I used nano to modify the exploit.timer file and specify 5 seconds.
+  
   ![image](https://github.com/user-attachments/assets/4611fc23-472a-445c-928c-0d85fbd8d676)
 - After setting this it's possible to run the sudo commands from earlier to run the exploit timer. Then you can move into the /opt directory to view
   the xxd service.
