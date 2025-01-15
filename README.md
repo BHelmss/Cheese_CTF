@@ -2,6 +2,18 @@
 Here I am going to demonstrate how to complete tryhackme's Cheese CTF. I will enumerate, exploit, and gain access to root files.
 YouTube Video I referenced for help: https://www.youtube.com/watch?v=V6tS5iPIX08
 
+# Tools Used
+- Nmap: Port Scanning
+- Dirsearch: Directory Brute Forcing
+- Caido: Proxy and HTTP Request Manipulation
+- Kali Linux
+  
+# Skills Learned
+- How to brute force directories by using a wordlist
+- Detecting vulnerabilities by capturing, analyzing, and manipulation HTTP requests
+- Creating a Reverse Shell
+- Navigating Linux directories
+  
 # Enumeration
   ## Ping
   - First thing I did was edit /etc/hosts to hold the IP of the target machine as cheese.thm
